@@ -414,7 +414,6 @@ hr {
   font-size: 1.4rem;
 }
 
-
 /* Contact */
 
 .contact {
@@ -546,5 +545,95 @@ footer a {
   footer,
   footer p {
     font-size: 1.2rem;
+  }
+}
+
+/* Media query for phones (max-width: 768px) */
+@media (max-width: 768px) {
+  /* Adjust the navigation menu */
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .nav-item {
+    margin: 0;
+  }
+
+  /* Adjust the landing page text */
+  .main-message h2 {
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+  }
+
+  .main-message h3 {
+    font-size: 1.2rem;
+  }
+
+  .main-message p {
+    font-size: 1rem;
+  }
+
+  /* Adjust the services section */
+  .service-tiers {
+    grid-template-columns: 1fr; /* Stack services vertically */
+    gap: 2rem;
+  }
+
+  .tier-item {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .tier-item h2 {
+    font-size: 1.5rem;
+  }
+
+  .tier-item p {
+    font-size: 1rem;
+  }
+
+  /* Adjust the about section */
+  .about .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-img img {
+    width: 10rem;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .about-text-box h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-text-box p {
+    font-size: 1rem;
+  }
+
+  /* Adjust the contact section */
+  .contact .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact p {
+    font-size: 1rem;
+  }
+
+  /* Footer adjustments */
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer p {
+    font-size: 1rem;
   }
 }
